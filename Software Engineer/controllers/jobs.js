@@ -18,7 +18,7 @@ module.exports = {
 				next(err)
 			}
 		},
-    async readJob (req, res, next) {
+    async readJobs (req, res, next) {
       try {
 				let jobs = await Jobs.find().limit(10)
 
